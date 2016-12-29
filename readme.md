@@ -11,7 +11,9 @@ npm install podcast-chapter-parser-psc
 ## Example
 
 ```js
-var psc = require('podcast-chapter-parser-psc');
+// for node, use xmldom; in a browser, pass window.DOMParser
+var DOMParser = require('xmldom').DOMParser; 
+var psc = require('podcast-chapter-parser-psc').parser(DOMParser);
 
 var chapters = psc.parse('<psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2">' 
   + '<psc:chapter title="Intro" start="00:00:01.200"/>'
