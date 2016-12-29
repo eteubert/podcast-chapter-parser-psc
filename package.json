@@ -16,6 +16,7 @@
     "mocha": "^3.2.0"
   },
   "dependencies": {
-    "normalplaytime": "^1.0.3"
+    "normalplaytime": "^1.0.3",
+    "xmldom": "^0.1.27"
   }
 }
