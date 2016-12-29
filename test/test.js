@@ -1,5 +1,6 @@
+var DOMParser = require('xmldom').DOMParser;
 var assert = require("assert");
-var psc = require('../index.js');
+var psc = require('../index.js').parser(DOMParser);
 
 const wrap = function(xml) {
     return '<psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2">' + xml + '</psc:chapters>';
