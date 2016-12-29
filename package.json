@@ -1,7 +1,7 @@
 {
   "name": "podcast-chapter-parser-psc",
   "version": "1.0.0",
-  "description": "Parse psc (podcast simple chapters) format into JSON",
+  "description": "Parse psc (podlove simple chapters) format into JSON",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
