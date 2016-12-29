@@ -1,6 +1,6 @@
 {
   "name": "podcast-chapter-parser-psc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse psc (podlove simple chapters) format into JSON",
   "main": "index.js",
   "scripts": {
