@@ -14,5 +14,8 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "normalplaytime": "^1.0.3"
   }
 }
