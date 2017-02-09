@@ -19,6 +19,10 @@ describe('psc', function() {
       assert.deepEqual([chapter_json], psc.parse(wrap('<psc:chapter title="Intro" start="00:00:01.200"/>')));
     });
 
+    it('should return json with start, title and href', function() {
+      assert.deepEqual([{ start: 1200, title: "Intro", href: "http://example.com" }], psc.parse(wrap('<psc:chapter title="Intro" start="00:00:01.200" href="http://example.com" />')));
+    });
+
     it('should return trim the title', function() {
       assert.deepEqual([chapter_json], psc.parse(wrap('<psc:chapter title=" Intro " start="00:00:01.200"/>')));
     });
