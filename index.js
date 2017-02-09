@@ -21,17 +21,17 @@ var parser = function(domparser) {
         for (var i = 0; i < chapterTags.length; i++) {
             var tag = chapterTags[i];
             var start = npt.parse(tag.getAttribute('start'));
-            var title = tag.getAttribute('title').trim();
-            var href  = tag.getAttribute('href').trim();
+            var title = tag.getAttribute('title');
+            var href  = tag.getAttribute('href');
 
             if (start !== null) {
                 var chapter = {
                     start: start,
-                    title: title
+                    title: title.trim()
                 };
 
                 if (href) {
-                    chapter.href = href;
+                    chapter.href = href.trim();
                 }
 
                 chapters.push(chapter);
